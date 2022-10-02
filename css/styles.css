@@ -17,6 +17,10 @@ body {
   font-size: 14px;
 }
 
+.ul {
+  list-style: none;
+}
+
 /* hide-titles */
 
 .visually-hidden {
@@ -24,13 +28,10 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 /* hedear */
@@ -59,7 +60,7 @@ span {
   color: var(--main-color);
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 
 .link:hover,
@@ -78,7 +79,7 @@ span {
 .contacts {
   font-weight: 500;
   line-height: 1.14px;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
 }
 
 .contacts:hover,
@@ -89,16 +90,12 @@ span {
 /* bottons */
 .main-btn {
   min-width: 200px;
-
   background: var(--hover-color);
   color: var(--main-backg-color);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  letter-spacing: 0.06;
-
+  letter-spacing: 0.06em;
   font-family: inherit;
   cursor: pointer;
 }
@@ -116,7 +113,7 @@ span {
   line-height: 1.36;
   /* or 136% */
   text-align: center;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero-section {
@@ -128,13 +125,46 @@ span {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  color: #212121;
 }
+
+.list-img {
+  background: #f5f5f5;
+}
+
 /* title - about */
+
 .title-about {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.42;
+  width: 270px;
+  height: 16px;
+  left: 515px;
+  top: 774px;
+  color: #212121;
+}
+
+.features-title {
+  font-weight: var(--bold-font-weight);
+  font-size: var(--primary-font-size);
+  line-height: 1.142;
   text-transform: uppercase;
+  position: absolute;
+  width: 270px;
+  height: 72px;
+  left: 215px;
+  top: 800px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.features-text {
+  font-size: var(--primary-font-size);
+  line-height: 1.714;
+  color: var(--secondary-text-color);
 }
 
 /* team */
@@ -158,8 +188,47 @@ span {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  background: #f5f4fa;
 }
 
+/* new-team */
+.team {
+  background: var(--light-background);
+  background: #f5f4fa;
+}
+
+.team-title {
+  font-weight: var(--bold-font-weight);
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  background: #f5f4fa;
+}
+
+.team-list-item {
+  background: var(--primary-white-color);
+  background: #f5f4fa;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.team-caption {
+  font-weight: var(--medium-font-weight);
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  background: #f5f4fa;
+}
+
+.team-subtitle {
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  color: var(--secondary-text-color);
+  background: #f5f4fa;
+}
 /*paragraf*/
 
 .content {
@@ -220,7 +289,6 @@ span {
 .second-btn:hover,
 .second-btn:focus {
   background-color: var(--hover-color);
-
   color: var(--main-backg-color);
 }
 
@@ -231,7 +299,7 @@ span {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   cursor: pointer;
 }
 
@@ -244,7 +312,6 @@ span {
   color: var(--main-color);
 }
 
-/* list proposition */
 .proposition {
   list-style: none;
 }
